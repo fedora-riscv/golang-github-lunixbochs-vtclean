@@ -15,7 +15,7 @@ preserving color.}
 %global godocs          README.md
 
 Name:           %{goname}
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Strips terminal escapes from text, can preserve color
 
 License:        MIT
@@ -53,6 +53,9 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %gopkgfiles
 
 %changelog
+* Wed Jan 29 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.0.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
+
 * Sat Oct 05 05:00:48 EEST 2019 Artem Polishchuk <ego.cordatus@gmail.com> - 1.0.0-1
 - Initial package
 
