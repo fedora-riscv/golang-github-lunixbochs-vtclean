@@ -15,7 +15,7 @@ preserving color.}
 %global godocs          README.md
 
 Name:           %{goname}
-Release:        8%{?dist}
+Release:        9%{?dist}
 Summary:        Strips terminal escapes from text, can preserve color
 
 License:        MIT
@@ -53,6 +53,10 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %gopkgfiles
 
 %changelog
+* Tue Jul 19 2022 Maxwell G <gotmax@e.email> - 1.0.0-9
+- Rebuild for CVE-2022-{1705,32148,30631,30633,28131,30635,30632,30630,1962} in
+  golang
+
 * Sat Jun 18 2022 Robert-André Mauchin <zebob.m@gmail.com> - 1.0.0-8
 - Rebuilt for CVE-2022-1996, CVE-2022-24675, CVE-2022-28327, CVE-2022-27191,
   CVE-2022-29526, CVE-2022-30629
