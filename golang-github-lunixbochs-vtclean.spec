@@ -15,7 +15,7 @@ preserving color.}
 %global godocs          README.md
 
 Name:           %{goname}
-Release:        11%{?dist}
+Release:        11.rvreb0%{?dist}
 Summary:        Strips terminal escapes from text, can preserve color
 
 License:        MIT
